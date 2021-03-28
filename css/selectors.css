@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+/* Селектор типа */
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+/* Селектор класс */
+.div1 {
+    font-size: medium;
+    font-style: italic;
+}
+
+/* Несколько классов на элементе */
+.background1 {
+    background-color: cornsilk;
+}
+
+/* CSS идентификатор */
+#p1 {
+    color: darkgreen;
+    font-weight: 600;    
+}
+
+/* Селектор потомков */
+.menu1 li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Дочерний селектор */
+.div2 > p {
+    background-color: gray;
+}
+
+/* Сестринский селектор */
+.div3 {
+    background-color: pink;
+}
+.div3 > p+p {
+    text-align: right;
+    color: purple;
+}
+
+/* Общий селектор смежных элементов */
+.div4 {
+    background-color: rosybrown;
+}
+
+.div4 > h2 ~ p {
+    color: seagreen;
+}
+
+/* Группирующий селектор */
+.div5 {
+    background-color: steelblue;
+}
+
+.div5 > h2, h3 {
+    color: whitesmoke;
+}
+
+/* Селектор атрибутов */
+form[action="/js/send.js"] {
+    background-color: thistle;
+}
+
+input[type="button"] {
+    background-color: cyan;
+}
+
+/* Универсальный селектор */
+* {
+    font-family: 'New Tegomin', serif;
+}

@@ -1,0 +1,55 @@
+
+/* Псевдокласс :hover */
+h1:hover {
+    color: blue;
+}
+
+/* Псевдоклассы :last-of-type, :first-of-type, :first-child, :last-child, :nth-child() */
+.div1 {
+    background-color: cornsilk;
+}
+
+.div1 li:last-of-type {
+    color: darkgreen;
+    font-weight: 700;
+}
+
+.div1 :last-child {
+    color: rgb(206, 9, 212);
+}
+
+.div1 p:nth-child(2n+1) {
+    color: orangered;    
+    font-weight: 800;
+}
+
+/* Псевдокласс :not () */
+.div2 {
+    background-color: paleturquoise;
+    color: royalblue;
+}
+
+.div2 :not(.p1) {
+    color: rebeccapurple;
+    font-size: 10px;
+}
+
+/* Псевдоэлементы ::before, ::after */
+
+.div3 {
+    background-color: yellow;
+}
+
+.div3::after {
+    content: "";
+    background-color: green;
+    display: block;
+    height: 20px;
+}
+
+.div3::before {
+    content: "";
+    background-color: red;
+    display: block;
+    height: 20px;
+}
