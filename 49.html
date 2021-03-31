@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>592.41</title>
+    <style>
+        .divBackground {
+            width: 400px;
+            height: 300px;
+            background: #6592CF;
+            padding: 1px;
+        }
+
+        .div {
+            width: 100px;
+            height: 100px;
+            background: #dd6b4d;
+        }
+
+        .home {
+            width: 150px;
+            height: 100px;
+            background: #243D83;
+            margin: 149px auto;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .home::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid #243D83;
+            margin: -100px -25px;
+        }
+
+        .door {}
+
+        .door::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #EEB850;
+            margin: 50px 50px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .door::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 10px;
+            background: #EEB850;
+            margin: -5px 25px;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divBackground">
+        <div class="home">
+            <div class="door"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
