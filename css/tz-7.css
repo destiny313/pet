@@ -1,0 +1,37 @@
+/* body {
+    font-size: 9px;
+    border: 1px solid red;
+}
+
+h1 {
+    border: inherit;
+}
+
+p {
+    border:inherit
+} */
+
+#pagewrapper {
+    color: yellow;
+}
+
+
+.content p {
+    color: red;
+}
+
+.content {
+    color: blue;
+}
+
+.secondary {
+    color: green  !important;    
+}
+
+.secondary {
+    color: orangered;
+}
+
+.third :not(p) {
+    color: violet;
+}
