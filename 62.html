@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>592.79</title>
+    <style>
+        .divBackground {
+            width: 400px;
+            height: 300px;
+            background:#191919;
+            padding: 1px;
+            /* margin: -8px; - для css-battle */ 
+        }
+
+        .window {
+            position: relative;
+            width: 150px;
+            height: 200px;
+            background: #F2AD43;            
+            margin: 49px auto;
+            border-radius: 75px 75px 20px 20px;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: relative;
+            width: 65px;
+            height: 65px;
+            background: #FFF58F;            
+            margin: 90px auto;
+            border-radius: 100%;
+        }
+        
+        .circle::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: #E08027;
+            border-radius: 100%;
+            margin: 10px -145px;
+        }
+
+        .circle::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;            
+            background: #824B20;
+            border-radius: 100%;
+            margin: 10px 5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="divBackground">
+        <div class="window">
+            <div class="circle"></div>           
+        </div>
+    </div>
+
+
+</body>
+
+</html>

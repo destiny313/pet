@@ -1,0 +1,25 @@
+.bodyBlock {
+    display: flex;
+    background-color: blueviolet;
+    height: 200px;
+}
+
+.div1 {
+    background-color:darkred;
+    flex-grow: .3;
+}
+
+.div2 {
+    background-color:cornflowerblue;
+    flex-grow: .3
+}
+
+.div3 {
+    background-color:darkgrey;
+    flex-grow: .3;
+}
+
+.div4 {
+    background-color: yellowgreen;
+    flex-grow: 1;
+}
