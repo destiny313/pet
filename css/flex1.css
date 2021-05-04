@@ -2,24 +2,31 @@
     display: flex;
     background-color: blueviolet;
     height: 200px;
+    flex-wrap: wrap;
 }
 
 .div1 {
     background-color:darkred;
     flex-grow: .3;
+    width: 33%;
 }
 
 .div2 {
     background-color:cornflowerblue;
-    flex-grow: .3
+    flex-grow: .3;
+    width: 33%;
+    
 }
 
 .div3 {
     background-color:darkgrey;
     flex-grow: .3;
+    /* width: 35%; */
+    
 }
 
 .div4 {
     background-color: yellowgreen;
     flex-grow: 1;
+    width: 50%;
 }
