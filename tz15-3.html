@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="some-object-key" type="text">
+    <input id="some-object-value" type="text">
+    <button id="btn">Ok</button>
+    <button id="del">Delete</button>
+    <div id="someObjectValue"></div>
+
+    <script>
+        const key = document.getElementById('some-object-key');
+        const value = document.getElementById('some-object-value');
+        const btn = document.getElementById('btn');
+        const del = document.getElementById('del');
+        const info = document.getElementById('someObjectValue');
+        let someObject = {};
+
+        btn.onclick = function() {
+            someObject[key.value] = value.value;
+            info.innerHTML = '';
+            
+         
+            for (let k in someObject) {
+                console.log(k);
+                info.innerHTML += `<p>Ключ: ${k}, значение: ${someObject[k]}</p>`;
+            }  
+            key.value ='';
+            value.value = ''; 
+        }
+
+        del.onclick = function() {
+            delete someObject[key.value];
+            info.innerHTML = '';
+            for (let k in someObject) {
+                console.log(k);
+                info.innerHTML += `<p>Ключ: ${k}, значение: ${someObject[k]}</p>`;
+            }  
+            key.value ='';
+            value.value = '';
+        } 
+            
+
+    </script>
+</body>
+</html>

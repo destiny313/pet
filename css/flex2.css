@@ -23,24 +23,28 @@ body{
     flex-wrap: nowrap;
     justify-content: space-between;    
     align-items: flex-end;
+    
  }
 
  .content__1 {
+     flex-shrink: 0;
      background-color: whitesmoke;
      width: 250px;
      box-sizing: border-box;
      padding: 10px;
-     border-radius: 5px;
-     
+     border-radius: 5px;     
+     /* align-self: stretch; */
  }
 
  .content__2 {
     box-sizing: border-box;
+    
     padding: 10px;
     border-radius: 5px;
 }
 
 .content__3 {
+    flex-shrink: 0;
     background-color: whitesmoke;
     width: 250px;
     box-sizing: border-box;
